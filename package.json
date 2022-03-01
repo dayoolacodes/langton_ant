@@ -1,0 +1,21 @@
+{
+  "name": "anttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
+  },
+  "author": "dayoolacodes",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "http-server": "^14.1.0"
+  }
+}
